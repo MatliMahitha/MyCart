@@ -123,11 +123,9 @@ function Product() {
                         <h5 class="card-title"> {product.name} </h5>
                         <p class="card-text"> {`Rs. ${product.price * select}`} </p>
                         <select className="m-2" onChange={(e) => { handleChange(e, product) }} >
+                          <option value="0.5">{`0.5kg-Rs.${product.price * 0.5}`}</option>
                           <option value="1">{`1kg-Rs.${product.price * 1}`}</option>
                           <option value="2">{`2kg-Rs.${product.price * 2}`}</option>
-                          <option value="3">{`3kg-Rs.${product.price * 3}`}</option>
-                          <option value="4">{`4kg-Rs.${product.price * 4}`}</option>
-                          <option value="5">{`5kg-Rs.${product.price * 5}`}</option>
                         </select>
                         <Button
                           variant="outline-primary"
